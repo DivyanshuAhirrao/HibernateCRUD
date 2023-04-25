@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name = "domain.Laptop" table = "laptop_info">
+
+        <id       name = "modelNumber"    column = "model_number"> </id>
+        <property name = "laptopCompany"   column ="model_brand" />
+        <property name = "ramSize"        column = "ram" />
+        <property name = "romSize"        column = "rom" />
+        <property name = "laptopPrice"    column = "price" />
+
+    </class>
+</hibernate-mapping>
+
